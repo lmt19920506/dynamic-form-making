@@ -50,7 +50,7 @@
       </template>
     </a-table>
     <a-button type="dashed" :disabled="disabled" @click="addDomain">
-      <a-icon type="plus" />增加
+      <a-icon type="plus" />Add
     </a-button>
   </a-form-model>
 </template>
@@ -89,7 +89,7 @@ export default {
       let columns = [];
       if (!this.record.options.hideSequence) {
         columns.push({
-          title: "序号",
+          title: "Index",
           dataIndex: "sequence_index_number",
           width: "60px",
           align: "center",
@@ -113,7 +113,7 @@ export default {
       );
 
       columns.push({
-        title: "操作",
+        title: "Action",
         dataIndex: "dynamic-delete-button",
         fixed: "right",
         width: "80px",
